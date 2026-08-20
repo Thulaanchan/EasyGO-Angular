@@ -1,0 +1,27 @@
+<nav class="flex items-center justify-between px-8 py-4 border-b border-gray-200">
+
+    <img src="logo.svg" alt="EasyGO Logo" class="w-24">
+  
+    <div class="flex items-center gap-6">
+  
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+  
+      <div class="relative">
+        <i class="fa-solid fa-cart-shopping"></i>
+  
+        @if (cartCount > 0) {
+          <span class="absolute -top-3 -right-3 bg-red-500 text-white text-xs rounded-full px-2">
+            {{ cartCount }}
+          </span>
+        }
+      </div>
+  
+      <button class="bg-indigo-600 text-white px-5 py-2 rounded-full">
+        Login
+      </button>
+  
+    </div>
+  
+  </nav>
